@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>pong game js</title>
+		<style>
+			body {
+				display: grid;
+				place-items: center;
+				background-color: #e8e2e2;
+			}
+
+			header {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr;
+			}
+
+			div {
+				padding: 1.5rem;
+				margin: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This is a simple ping pong game using javascript</h1>
+		<header>
+			<div>
+				You can move player on your left by using keys [w,s]<br />
+				<span>w - formoving up </span><br />
+				<span>s - for moving down </span>
+			</div>
+			<div>
+				You can move player on your right by using keys
+				[ArrowUp,Arrowdown] <br />
+				<span>ArrowUp - for moving up</span><br />
+				<span>Arrowdown - for moving down </span>
+			</div>
+		</header>
+		<main>
+			<canvas id="pong" width="1400px" height="800px"></canvas>
+		</main>
+		<script src="./index.js"></script>
+	</body>
+</html>
